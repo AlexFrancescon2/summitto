@@ -1,3 +1,4 @@
+
 RefundApp
 1) Part 1- Project
 Dev tests:
@@ -9,13 +10,13 @@ Conceptual synthesis:
 Having at the current moment no knowledge with React.js, the App has been developed
 with JavaScript, HTML and CSS.
 The App is divided in two sections:
-– a landing page (index.html) which introduces the functionalities of the app
-– the logic page (logic.html) which stores the main functionality of the app
+ï¿½ a landing page (index.html) which introduces the functionalities of the app
+ï¿½ the logic page (logic.html) which stores the main functionality of the app
 This App allows the users to upload their invoices (at the actual moment through the
 formats PNG, JPG e JPEG), having its information extrapolated and eventually apply for a
 refund entering the percentage of refund. The invoices are saved in a JavaScript array of
 Invoices, which gets resetted every time the session changes.
-The invoices are acquired thanks to the JavaScript library “Tesseract.js”; this library allows
+The invoices are acquired thanks to the JavaScript library ï¿½Tesseract.jsï¿½; this library allows
 to read an image file and to extract its content in pure text.
 Through a series of assumptions the app recognizes the total amount of the invoice and
 the tax rate, which will be saved later in an Invoice variable along with the text, the
@@ -46,7 +47,7 @@ arrangement of the information, or the introduction of a search index would cert
 helped. In my opinion it was a real brazen challenge: if it hadn't been so fluid, it would
 have been a probably fail.
 Others small mentions I would like to make, are UberEats and Alibaba. They're not famous
-for their striking design (although the for UberEats the speech is different – with the target
+for their striking design (although the for UberEats the speech is different ï¿½ with the target
 to strike as mobile application - but still raised from a branch of Uber and imposed itsef as
 GrubHub service), but for as they fulfill the goal they're designed for, in mention to the
 second point.
@@ -57,6 +58,6 @@ But, I also think that it wasn't the only solution.
 I'm a fan of the well weighted, adjusted and thoughtful compromises when it's necessary;
 in short terms, in my opinion, the design could be better: the product animation are bland
 with a short zoom-in, just to provide a dynamism that at the end doesn't strike at all; also,
-small overlays animations (with bugs) give a “old style design” sensation.
+small overlays animations (with bugs) give a ï¿½old style designï¿½ sensation.
 On the contrary, the structure seem to have been studied in the best way, to ensure the
 correct arrangement of the elements on the page, helping the user to navigate easily.
