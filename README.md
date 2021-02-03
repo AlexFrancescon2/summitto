@@ -1,45 +1,62 @@
-usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
-           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
-           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
-           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
-           <command> [<args>]
-
-These are common Git commands used in various situations:
-
-start a working area (see also: git help tutorial)
-   clone             Clone a repository into a new directory
-   init              Create an empty Git repository or reinitialize an existing one
-
-work on the current change (see also: git help everyday)
-   add               Add file contents to the index
-   mv                Move or rename a file, a directory, or a symlink
-   restore           Restore working tree files
-   rm                Remove files from the working tree and from the index
-   sparse-checkout   Initialize and modify the sparse-checkout
-
-examine the history and state (see also: git help revisions)
-   bisect            Use binary search to find the commit that introduced a bug
-   diff              Show changes between commits, commit and working tree, etc
-   grep              Print lines matching a pattern
-   log               Show commit logs
-   show              Show various types of objects
-   status            Show the working tree status
-
-grow, mark and tweak your common history
-   branch            List, create, or delete branches
-   commit            Record changes to the repository
-   merge             Join two or more development histories together
-   rebase            Reapply commits on top of another base tip
-   reset             Reset current HEAD to the specified state
-   switch            Switch branches
-   tag               Create, list, delete or verify a tag object signed with GPG
-
-collaborate (see also: git help workflows)
-   fetch             Download objects and refs from another repository
-   pull              Fetch from and integrate with another repository or a local branch
-   push              Update remote refs along with associated objects
-
-'git help -a' and 'git help -g' list available subcommands and some
-concept guides. See 'git help <command>' or 'git help <concept>'
-to read about a specific subcommand or concept.
-See 'git help git' for an overview of the system.
+RefundApp
+1) Part 1- Project
+Dev tests:
+Operating system: Windows 10.
+Tested browsers: Firefox, Chrome, Edge, Opera.
+Development time:
+Full 10 hours.
+Conceptual synthesis:
+Having at the current moment no knowledge with React.js, the App has been developed
+with JavaScript, HTML and CSS.
+The App is divided in two sections:
+– a landing page (index.html) which introduces the functionalities of the app
+– the logic page (logic.html) which stores the main functionality of the app
+This App allows the users to upload their invoices (at the actual moment through the
+formats PNG, JPG e JPEG), having its information extrapolated and eventually apply for a
+refund entering the percentage of refund. The invoices are saved in a JavaScript array of
+Invoices, which gets resetted every time the session changes.
+The invoices are acquired thanks to the JavaScript library “Tesseract.js”; this library allows
+to read an image file and to extract its content in pure text.
+Through a series of assumptions the app recognizes the total amount of the invoice and
+the tax rate, which will be saved later in an Invoice variable along with the text, the
+currency and some other additional data.
+Once all the data have been acquired without errors, the app will later ask to the user if he
+would like to refund the invoice and, in case, the refund percentage. The full refund
+amount will be displayed in real time.
+Purely for this project purposes, the app will display the uploaded invoices with all the
+information acquired; The content of the will not be displayed by stylistc choice. But to
+notice, the content will be present anyway in the javaScript variable and ready to use.
+Better is the quality of the image, better is the result.
+On the project files you will find the sample invoices that I used to test the functionality on
+various browsers.
+2) Part 2 - Question
+I think this question could be analyzed under two different points of view:
+1) under the pure design style, UX, feeling and satisfaction provided;
+2) as a pure digital product, in relation to the goal that bears the App and functionalities it
+must provide;
+For me, a well-designed web application has to have a good score on the two
+aforementioned points.
+I may be 'obvious', but I think that what did Apple to sponsor the Airpad Pro is really
+amazing: https://www.apple.com/it/airpods-pro/. As far as it's a static website, it bears an
+amazing design and it never gets boring to scroll. However, it is delicate. As mesmerizing 
+as it is, perhaps it's too long; it's really difficult to search for certain informations: as far as
+the focus is "the WOW effect", perhaps after the second visit on the page it becomes
+redundant. Perhaps a compromise between the length of the page/animations and the
+arrangement of the information, or the introduction of a search index would certainly have
+helped. In my opinion it was a real brazen challenge: if it hadn't been so fluid, it would
+have been a probably fail.
+Others small mentions I would like to make, are UberEats and Alibaba. They're not famous
+for their striking design (although the for UberEats the speech is different – with the target
+to strike as mobile application - but still raised from a branch of Uber and imposed itsef as
+GrubHub service), but for as they fulfill the goal they're designed for, in mention to the
+second point.
+During my previous experience, with the team we had to design some pages for the ecommerce we were building, and it characteristics were similar to Alibaba's ones. I used to
+take inspirations from it, since it's a similar ecosystem well studied and worked in.
+I guess they really simplified the design to guarantee the easiets usability to their targets.
+But, I also think that it wasn't the only solution.
+I'm a fan of the well weighted, adjusted and thoughtful compromises when it's necessary;
+in short terms, in my opinion, the design could be better: the product animation are bland
+with a short zoom-in, just to provide a dynamism that at the end doesn't strike at all; also,
+small overlays animations (with bugs) give a “old style design” sensation.
+On the contrary, the structure seem to have been studied in the best way, to ensure the
+correct arrangement of the elements on the page, helping the user to navigate easily.

@@ -1,0 +1,257 @@
+
+
+.role-box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.role-box:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 21px;
+}
+
+.placeholder {
+    font-size: 300;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.collapsible {
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-top: 15px;
+    border-left: 5px solid #36a8be;
+    background-color: transparent;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #f8f8f8;
+}
+
+.filename {
+    color: #36a8be;
+    font-weight: 600;
+}
+
+.status[data-status="true"] {
+    font-size: 14px;
+    color: green;
+}
+
+.content {
+    font-size: 14px;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f8f8f8;
+    border-left: 5px solid #36a8be;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 3px solid #36a8be;
+    border-radius: 30px;
+    color: #36a8be;
+    background-color: #fff;
+    padding: 12px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.custom-file-upload:hover {
+    color: #fff;
+    background-color: #36a8be;
+    text-decoration: none;
+}
+
+/* HANDLE LOADER */
+.loader {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 75px;
+    display: inline-block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+.loader-wrapper:not(.loaded) {
+    display: none;
+}
+
+.loaded {
+    position: absolute;
+    z-index: 1300;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background-color: #00000099;
+}
+
+.loader-1 .loader-outter {
+    position: absolute;
+    border: 4px solid #36a8be;
+    border-left-color: transparent;
+    border-bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    -webkit-animation: loader-1-outter 1s cubic-bezier(.42, .61, .58, .41) infinite;
+    animation: loader-1-outter 1s cubic-bezier(.42, .61, .58, .41) infinite;
+}
+
+.loader-1 .loader-inner {
+    position: absolute;
+    border: 4px solid #2c8292;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    left: calc(50% - 20px);
+    top: calc(50% - 20px);
+    border-right: 0;
+    border-top-color: transparent;
+    -webkit-animation: loader-1-inner 1s cubic-bezier(.42, .61, .58, .41) infinite;
+    animation: loader-1-inner 1s cubic-bezier(.42, .61, .58, .41) infinite;
+}
+
+@-webkit-keyframes loader-1-outter {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader-1-outter {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes loader-1-inner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes loader-1-inner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+
+.modal-header {
+    padding: .6rem .6rem;
+    border-bottom: none !important;
+}
+
+.modal-footer {
+    border-top: none !important;
+}
+
+span.file-name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+p.subtitle {
+    font-size: 20px;
+    color: #36a8be;
+    font-weight: 600;
+}
+
+input[type=radio] {
+    margin-bottom: 8px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.error-modal-content {
+    background-color: #fefbfb !important;
+}
+
+.custom-button {
+    border: 3px solid #36a8be;
+    border-radius: 30px;
+    color: #36a8be;
+    background-color: #fff;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.custom-button:hover {
+    color: #fff;
+    background-color: #36a8be;
+    text-decoration: none;
+}
+
+/* ovverride boostrap buttons css */
+.btn-primary {
+    background-color: transparent !important;
+    border: 2px solid #36a8be !important;
+    border-radius: 30px !important;
+    padding: 10px !important;
+    color: #36a8be !important;
+}
+
+.btn-primary:hover {
+    background-color: #36a8be !important;
+    color: #fff !important;
+}
+
+.btn-secondary {
+    background-color: transparent !important;
+    border: 2px solid #6c757d !important;
+    border-radius: 30px !important;
+    padding: 10px !important;
+    color: #6c757d !important;
+}
+
+.btn-secondary:hover {
+    background-color: #6c757d !important;
+    color: #fff !important;
+}

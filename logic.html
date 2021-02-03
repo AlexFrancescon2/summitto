@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Refund app | Register your invoices!</title>
+    <!-- Imports -->
+    <link rel="stylesheet" href="assets/css/general.css">
+    <link rel="stylesheet" href="assets/css/logic.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Scripts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <script src="node_modules/jquery/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="assets/js/logic.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/2.1.2/tesseract.min.js'></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navbar navbar-expand navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+                <svg id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170.19 205.54"
+                    width=45px>
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: none;
+                                stroke: #35a8be;
+                                stroke-linecap: round;
+                                stroke-miterlimit: 10;
+                                stroke-width: 13px;
+                            }
+    
+                            .cls-2 {
+                                font-size: 170px;
+                                font-family: ComicSansMS-Bold, Comic Sans MS;
+                                font-weight: 700;
+                            }
+    
+                            .cls-2,
+                            .cls-3 {
+                                fill: #35a8be;
+                            }
+                        </style>
+                    </defs>
+                    <path class="cls-1" d="M130.73,22.39a77.37,77.37,0,1,1-18.55-10" transform="translate(-0.65 -0.99)" />
+                    <text class="cls-2" transform="translate(32.61 153.99)">R</text>
+                    <circle class="cls-3" cx="140.37" cy="64.97" r="2.64" />
+                </svg>
+                RefundApp
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+        <div class="loader-wrapper">
+            <div class="loader loader-1">
+                <div class="loader-outter"></div>
+                <div class="loader-inner"></div>
+            </div>
+        </div>
+        <div id="modal-wrapper">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="role-box sticky-top">
+                        <p class="title">Add a new invoice</p>
+                        <p>Click on the botton below to ad a new invoice from your device, and provide all the information
+                            needed.</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <label for="uploader" class="custom-file-upload">
+                                Add a new invoice
+                            </label>
+                            <input type="file" id="uploader" class="custom-button">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+                    <div class="role-box">
+                        <p class="title">Overview</p>
+                        <p>Consult the list of your registered invoices.</p>
+                        <div id="registered-invoices">
+                            <p class="placeholder text-center">
+                                You haven't uploaded any invoices yet! <br>
+                                Add some by clicking the button "add" on the left card!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="push"></div>
+    </div>
+    <footer class="d-md-flex justify-content-around p-3 text-center text-md-left">
+        <!-- animate__animated animate__fadeInUp -->
+        <div>
+            <p class="mb-0"> Powered By <br>
+                Alex Francescon</p>
+        </div>
+        <div class="d-md-flex justify-content-center align-items-center mt-3 mt-md-0">
+            <a class="link" href="index.html">Home!</a>
+        </div>
+        <div class="text-md-center mt-3 mt-md-0">
+            <p class="mb-0">Follow us on:</p>
+            <a href="https://www.linkedin.com/in/alex-francescon-2576bb180/" target="_blank" rel="noopener noreferrer">
+                <svg class="linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 382 382"
+                    xmlns:v="https://vecta.io/nano" width="18px">
+                    <path
+                        d="M347.445 0H34.555C15.471 0 0 15.471 0 34.555v312.889C0 366.529 15.471 382 34.555 382h312.889C366.529 382 382 366.529 382 347.444V34.555C382 15.471 366.529 0 347.445 0zM118.207 329.844a10.06 10.06 0 0 1-10.056 10.056H65.345a10.06 10.06 0 0 1-10.056-10.056V150.403a10.06 10.06 0 0 1 10.056-10.056h42.806a10.06 10.06 0 0 1 10.056 10.056v179.441zM86.748 123.432c-22.459 0-40.666-18.207-40.666-40.666S64.289 42.1 86.748 42.1s40.666 18.207 40.666 40.666-18.206 40.666-40.666 40.666zM341.91 330.654a9.25 9.25 0 0 1-9.246 9.246H286.73a9.25 9.25 0 0 1-9.246-9.246v-84.168c0-12.556 3.683-55.021-32.813-55.021-28.309 0-34.051 29.066-35.204 42.11v97.079a9.25 9.25 0 0 1-9.246 9.246h-44.426a9.25 9.25 0 0 1-9.246-9.246V149.593a9.25 9.25 0 0 1 9.246-9.246h44.426a9.25 9.25 0 0 1 9.246 9.246v15.655c10.497-15.753 26.097-27.912 59.312-27.912 73.552 0 73.131 68.716 73.131 106.472v86.846z"
+                        fill="#36a8be" />
+                </svg>
+            </a>
+
+        </div>
+    </footer>
+</body>
+</html>
