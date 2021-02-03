@@ -54,7 +54,7 @@ Perhaps a compromise between the length of the page/animations and the arrangeme
 
 Others small mentions I would like to make, are UberEats and Alibaba. 
 
-They're not famous for their striking design (although the for UberEats the speech is different � with the target
+They're not famous for their striking design (although the for UberEats the speech is different - with the target
 to strike as mobile application - but still raised from a branch of Uber and imposed itsef as GrubHub service), but for as they fulfill the goal they're designed for, in mention to the second point.
 
 During my previous experience, with the team we had to design some pages for the ecommerce we were building, and it characteristics were similar to Alibaba's ones. I used to take inspirations from it, since it's a similar ecosystem well studied and worked in.
